@@ -14,6 +14,10 @@ const config: Config = {
       lg: "1200px",
     },
     extend: {
+      colors: {
+        primaria: "#00040f",
+        sec: "#00f6ff",
+      },
       container: {
         center: true,
         padding: {

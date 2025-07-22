@@ -6,8 +6,27 @@
     font-family:'Mont' ;
     src: url('../assets/Montserrat-Regular.ttf');
 }
+@font-face {
+    font-family:'Unigeo' ;
+    src: url('../assets/font/Unigeo.ttf');
+}
+
+@font-face {
+    font-family:'OMEGLE' ;
+    src: url('../assets/font/OMEGLE.otf');
+}
 body{
     font-family: 'Mont';
+}
+.p1{
+     font-family:'Mont' ;
+}
+.t1
+{
+     font-family: 'Unigeo';   
+}
+.t2{
+     font-family:'OMEGLE' ;
 }
 @layer components {
     .btn{
@@ -36,5 +55,15 @@ body{
     }
     .card {
         @apply p-10 border-solid border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
+    }
+    .h12{
+        background-image: linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%);
+         border-color: rgb(93, 79, 240);
+    }
+    .z12{
+        background-image: linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);
+    }
+    .z13{
+        background-image: linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);
     }
 }

@@ -1,34 +1,35 @@
 import Image from "next/image";
 import logo from '@/assets/logo_monochromatic.png'
+
+
 export const Navbar = () => {
-    const NavLinks = [
-  {label: "Home", href:"#"},
-  {label: "sobre", href:"#"},
-  {label: "servicos", href:"#"},
-  {label: "conctatos", href:"#"}
-];
-    return (
-      <div className="py-4 lg:py-8">
-      <div className="container max-w-5xl">
-        <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15 rounded-full p-2 items-center">
-          <div>
-              <Image src={logo} alt="champier" className="h-9 w-auto ml-2"/>
+      const NavLinks = [
+          {id:1, label: "Home", href:"#"},
+          {id:2,label: "sobre", href:"#"},
+          {id:3, label: "servicos", href:"#"},
+          {id:4, label: "conctatos", href:"#"}
+      ];
+
+      return (
+      <div className="transition-all duration-200 h-[12vh] z-[100] fixed overflow-hidden w-full top-0 backdrop-blur-sm">
+        <div className="flex items-center h-full justify-between sm:w-[80%] w-[90%] mx-auto">
+          {/*logo */}
+          <div className="text-white font-semibold text-2xl sm:text-3xl">
+                Vhonani
           </div>
-          <div className="lg:flex justify-center items-center hidden">
-            <nav className="flex gap-6 font-medium text-white">
-              {NavLinks.map((link)=>(
-                <a href="" key={link.label}>{link.label}</a>
+          {/*logo */}
+          <div className="lg:flex items-center space-x-10 hidden">
+              {NavLinks.map((link) => (
+                <div className="text-white font-medium transition-all duration-200 cursor-pointer" key={link.id}>
+                  <p>{link.label}</p>
+                  </div>
               ))}
-            </nav>
           </div>
-          <div className="flex justify-end gap-4">
-           
-            <button className="border h-12 rounded-full px-6 font-medium border-white text-white bg-transparent hidden md:inline-flex items-center">Login</button>
-            <button className="border h-12 rounded-full px-6 font-medium bg-lime-400 text-neutral-950 border-lime-400 hidden md:inline-flex items-center">Login</button>
+          {/*hamburguer */}
+          <div>
+            <button className="text-[#00040f]  border-b-[1.5px] p-2 border-white bg-white rounded-md">fale conosco</button>
           </div>
         </div>
-      </div>  
-       </div> 
-    
+      </div>
     )
 }

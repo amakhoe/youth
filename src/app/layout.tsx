@@ -5,7 +5,7 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Champier LDA",
+  title: "Vhonani Tech",
   description: "Template created by Amakhoe",
 };
 
@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="relative">
-      <body className="antialiased bg-[#00040f]">
+    <html lang="pt">
+      <body className="antialiased bg-primaria">
         {children}
       </body>
     </html>

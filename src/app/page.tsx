@@ -5,7 +5,7 @@ import { Footer } from "@/sections/Footer";
 import { Hero } from "@/sections/Hero";
 import { LogoTicker } from "@/sections/LogoTicker";
 import { Navbar } from "@/sections/navbar";
-
+import {Contact} from '@/sections/contact'
 import { ProductShowcase } from "@/sections/ProductShowcase";
 
 
@@ -15,8 +15,8 @@ export default function Home() {
     <Navbar />
     <Hero />
     <LogoTicker />
-    <Feature/>
-    <ProductShowcase />
+ 
+    <Contact/>
     <Footer/>
     
     </>

@@ -6,7 +6,7 @@ import Youtube from '@/assets/social-youtube.svg'
 import Image from 'next/image';
 export const Footer = () => {
   return (
-    <footer className='bg-black text-[#bcbcbc] text-sm py-10 text-center'>
+    <footer className='bg-primaria text-[#bcbcbc] text-sm py-10 text-center'>
       <div className='container'>
         <div className="inline-flex relative before:content-[''] before:absolute
          before:top-2 before:bottom-0 before:w-full ">
@@ -25,7 +25,7 @@ export const Footer = () => {
           <Youtube alt="youtube" />
           <Insta alt="Insta"/>
         </div>
-        <p className='mt-6'>&copy; 2025 Kars Design, Inc. All Right</p>
+        <p className='mt-6'>&copy; 2025 Vhonani Design, Inc. All Right</p>
       </div>
     </footer>
   )
